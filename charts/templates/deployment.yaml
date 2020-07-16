@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: doom-deployment
+spec:
+  selector:
+    matchLabels:
+      app: doom-deployment
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: doom-deployment
+    spec:
+      containers:
+      - name: master
+        image: nzregularit/doombox
+        ports:
+        - containerPort: 443
