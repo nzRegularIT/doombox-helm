@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: doom-service
+  name: doom-deploy
   labels:
-    app: doom-deployment
+    name: doom-deploy
 spec:
   ports:
   - port: 443
     targetPort: 443
   selector:
-    app: doom-deployment
+    app: doom-deploy
   type: LoadBalancer
