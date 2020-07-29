@@ -6,6 +6,6 @@ metadata:
 spec:
   releaseName: doombox
   chart:
-    git: https://github.com/nzRegularIT/doombox
+    git: https://github.com/nzRegularIT/doombox-helm
     path: charts
     ref: master
