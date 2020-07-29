@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: doombox
-  namespace: prod
+  namespace: doombox-demo
 spec:
   releaseName: doombox
   chart:
