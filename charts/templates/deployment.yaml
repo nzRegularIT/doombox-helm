@@ -4,6 +4,10 @@ metadata:
   name: doombox
   namespace: doombox-demo
 spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: doombox
